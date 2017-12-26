@@ -1,0 +1,15 @@
+{
+  "name": "hcg",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bai tap lon he chuyen gia",
+  "scripts": {
+    "start": "node bin/www"
+  },
+  "author": "Huong Nguyen (shovity@gmail.com)",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "jade": "^1.11.0"
+  }
+}

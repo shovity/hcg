@@ -1,0 +1,24 @@
+body {
+	padding-top: 70px;
+	overflow-x: hidden;
+}
+.btn {
+	margin-left: 10px;
+}
+
+tr {
+	cursor: pointer;
+}
+
+tr.active td {
+	background: #e6e6e6 !important;
+}
+
+.glyphicon-remove {
+	float: right;
+}
+
+#tableEvents {
+	height: 100px !important;
+	overflow-y: scroll;
+}

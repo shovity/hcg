@@ -1,0 +1,28 @@
+extends master
+block content
+
+  .col-md-8.col-md-offset-2
+    legend Thêm sự kiện
+    .form-group
+      label(for='name') Tên sự kiện
+      input.form-control(type='text', id='name', name='name', placeholder='Nhập tên sự kiện')
+      label(for='id') Mã sự kiện
+      .input-group
+        span.input-group-btn
+          input.form-control(type='text', id='id', name='id', placeholder='Nhập mã sự kiện' style='margin-right: -50px')
+          button.btn.btn-default(id='generateId') Tạo
+      input(name='index', id='index', value='' hidden)
+    button.btn.btn-success(id='add') Thêm
+    button.btn.btn-primary(id='edit') Sửa
+    button.btn.btn-danger(id='remove') Xóa
+
+  .col-md-8.col-md-offset-2
+    br
+    .panel.panel-default
+      .panel-heading Danh sách sự kiện
+      table.table.table-hover
+        tbody#table
+          th Mã sự kiện
+          th Tên sự kiện
+block foot
+  script(src='/js/event.js')

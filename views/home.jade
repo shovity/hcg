@@ -1,0 +1,29 @@
+extends master
+block content
+	.row
+		br
+		.col-md-3.col-md-offset-1
+			.panel.panel-default
+				.panel-heading Danh sách sự kiện
+				table.table.table-hover
+					tbody#tableEvents
+						th Mã
+						th Tên
+						
+		.col-md-7
+			legend Suy diễn tiến
+			.form-group
+				label(for='id') Giả thiết
+				.input-group
+					input#id.form-control(type='text' placeholder='Nhập giả thiết (phím cách để chèn kí tự "^")')
+					span.input-group-btn
+						button.btn.btn-info#clear(type='button') Clear
+						button.btn.btn-primary#enter(type='button') Enter
+
+			.alert.alert-success#al.hidden
+			.hidden#tlog
+				.panel.panel-default
+					table.table.table-hover
+						tbody#log
+block foot
+	script(src='/js/home.js')
